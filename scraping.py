@@ -30,7 +30,7 @@ if respuesta.status_code == 200:
                     "imagen": imagen,
                     "calificacion": calificacion
                 }
-                escritor.writerow(dict_juego)  # Escribimos una fila en el CSV
+                escritor.writerow(dict_juego)
 
             except AttributeError:
                 print("Error al extraer datos de un juego, posiblemente faltan elementos.")
